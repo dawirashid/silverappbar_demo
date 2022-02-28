@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'servicepage.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -29,6 +30,16 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Container(
                 height: 100,
                 width: 100,
+                child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ServicePage()),
+                      );
+                    },
+                    child: const Text('iphone')),
+
                 // color: const Color(0xffb254ea),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
@@ -50,33 +61,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-          ),SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 100,
-                width: 100,
-                // color: const Color(0xffb254ea),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: const Color(0xffb254ea),
-                ),
-              ),
-            ),
-          ),SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 100,
-                width: 100,
-                // color: const Color(0xffb254ea),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: const Color(0xffb254ea),
-                ),
-              ),
-            ),
-          ),SliverToBoxAdapter(
+          ),
+          SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
@@ -117,7 +103,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-          ),SliverToBoxAdapter(
+          ),
+          SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
@@ -130,7 +117,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-          ),SliverToBoxAdapter(
+          ),
+          SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
@@ -143,7 +131,36 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-          ),SliverToBoxAdapter(
+          ),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 100,
+                width: 100,
+                // color: const Color(0xffb254ea),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: const Color(0xffb254ea),
+                ),
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 100,
+                width: 100,
+                // color: const Color(0xffb254ea),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: const Color(0xffb254ea),
+                ),
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
